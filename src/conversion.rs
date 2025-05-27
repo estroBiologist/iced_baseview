@@ -766,7 +766,7 @@ pub fn convert_raw_window_handle(
 
             raw_handle.hinstance = handle
                 .hinstance
-                .is_null()
+                .is_some()
                 .then(|| NonZeroIsize::new(handle.hinstance as isize).unwrap());
 
             raw_window_handle_06::RawWindowHandle::Win32(raw_handle)

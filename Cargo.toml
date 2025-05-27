@@ -20,6 +20,7 @@ default = ["wgpu"]
 debug = ["iced_runtime/debug"]
 # Enable the wgu renderer
 wgpu = ["iced_renderer/wgpu", "iced_widget/wgpu"]
+tiny-skia = ["iced_renderer/tiny-skia"]
 image = ["iced_graphics/image", "iced_widget/image", "iced_renderer/image"]
 svg = ["iced_graphics/svg", "iced_widget/svg", "iced_renderer/svg"]
 geometry = ["iced_graphics/geometry", "iced_renderer/geometry"]
